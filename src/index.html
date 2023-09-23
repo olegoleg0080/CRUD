@@ -4,10 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
-    <include src="./partials/example.html"></include>
+    <form action="form">
+      <input type="text" name="name">
+      <input type="text" name="text">
+      <button type="submit">submit</button>
+    </form>
+    <div class="posts-container"></div>
+    <div class="modal" style="display: none;">
+      <h2>Редактировать пост</h2>
+      <label>
+        Заголовок:
+        <input type="text" name="title">
+      </label>
+      <label>
+        Текст:
+        <textarea name="body"></textarea>
+      </label>
+      <button class="save">Сохранить</button>
+    </div>
+      
   </body>
 </html>

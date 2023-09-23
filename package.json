@@ -5,7 +5,8 @@
   "homepage": "https://olegoleg0080.github.io/CRUD",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /CRUD/"
+    "build": "parcel build src/*.html --public-url /CRUD/",
+    "serve": "json-server --watch db.json"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
     "url": "https://github.com/olegoleg0080/CRUD/issues"
   },
   "dependencies": {
+    "json-server": "^0.17.3",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
